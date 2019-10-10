@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.estacio.prii.appgui.frame;
+package br.estacio.prii.estacionamentoi.frame;
 
 import javax.swing.JFrame;
 
@@ -15,7 +15,7 @@ public class FrameLogin extends JFrame {
 
     
     public FrameLogin(){
-        setTitle("Aplicaçao GUI Swing");
+        setTitle("Login");
         setSize(300,300);
         setLocationRelativeTo(null);
         

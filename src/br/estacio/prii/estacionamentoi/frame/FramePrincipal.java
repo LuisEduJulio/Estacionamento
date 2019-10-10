@@ -1,4 +1,4 @@
-package br.estacio.prii.appgui.frame;
+package br.estacio.prii.estacionamentoi.frame;
 
 import javax.swing.JFrame;
 
@@ -27,7 +27,6 @@ public class FramePrincipal extends JFrame {
         cancelaButton = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(300, 300));
 
         nomeLabel.setText("Usuário:");
 

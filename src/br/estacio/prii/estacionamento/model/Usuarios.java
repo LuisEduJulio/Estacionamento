@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.estacio.prii.appgui.model;
+package br.estacio.prii.estacionamento.model;
 
 /**
  *
@@ -11,11 +11,17 @@ package br.estacio.prii.appgui.model;
  */
 public class Usuarios {
     private int codigo;
-    private String nome, email, telefone, cpf, login, senha;
-    private boolean ativo;
+    private String nome, placa, telefone, cpf, login, senha, veiculo, cor;
 
-    public String getEmail(){ return email; }
-    public void setEmail(String email){ this.email = email; }
+    public String getPlaca(){  return placa; }
+    public void setPlaca(String placa){ this.placa = placa; }
+    public String getVeiculo(){ return veiculo;}
+    public void setVeiculo(String veiculo){ this.veiculo = veiculo;}
+    public String getCor(){ return cor; }
+    public void setCor(String cor){ this.cor = cor; }
+    private boolean ativo;
+    public String getEmail(){ return placa; }
+    public void setEmail(String email){ this.placa = email; }
     public String getTelefone(){ return telefone; }
     public void setTelefone(String telefone){ this.telefone = telefone; }
     public String getCpf(){ return cpf; }

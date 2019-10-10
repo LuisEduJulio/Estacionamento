@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.estacio.prii.appgui.main;
+package br.estacio.prii.estacionamento.main;
 //import br.estacio.prii.appgui.frame.FrameLogin;
-import br.estacio.prii.appgui.frame.FrameMenu;
+import br.estacio.prii.estacionamentoi.frame.FrameMenu;
 /**
  *
  * @author luis
