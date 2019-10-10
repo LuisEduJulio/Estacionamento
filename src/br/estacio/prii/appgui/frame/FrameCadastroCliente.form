@@ -26,24 +26,28 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="matriculaLabel" alignment="0" min="-2" pref="51" max="-2" attributes="0"/>
+                  <Component id="cadastroLabel" alignment="0" min="-2" pref="51" max="-2" attributes="0"/>
                   <Component id="nomeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="sexoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="idadeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="cursoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="veiculoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="placaLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="corLabel" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="cursoCombobox" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="motoRadio" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="carroRadio" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="corText" alignment="0" pref="73" max="32767" attributes="0"/>
                                   <Component id="idadeText" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="mRadio" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="fRadio" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="buscarPlacaButton" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -65,7 +69,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="matriculaText" min="-2" pref="119" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="buscaButton" min="-2" max="-2" attributes="0"/>
+                                  <Component id="buscarCadastroButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="nomeText" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
                           </Group>
@@ -82,8 +86,8 @@
               <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="2" attributes="0">
                   <Component id="matriculaText" alignment="2" min="-2" max="-2" attributes="0"/>
-                  <Component id="matriculaLabel" alignment="2" min="-2" max="-2" attributes="0"/>
-                  <Component id="buscaButton" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cadastroLabel" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="buscarCadastroButton" alignment="2" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="2" attributes="0">
@@ -103,19 +107,20 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="2" attributes="0">
-                          <Component id="sexoLabel" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="mRadio" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="fRadio" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="veiculoLabel" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="motoRadio" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="carroRadio" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="2" attributes="0">
-                          <Component id="idadeLabel" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="placaLabel" alignment="2" min="-2" max="-2" attributes="0"/>
                           <Component id="idadeText" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="buscarPlacaButton" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="2" attributes="0">
-                          <Component id="cursoLabel" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="cursoCombobox" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="corLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="corText" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -130,9 +135,9 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="matriculaLabel">
+    <Component class="javax.swing.JLabel" name="cadastroLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Matr&#xed;cula:"/>
+        <Property name="text" type="java.lang.String" value="Cadastro:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="matriculaText">
@@ -144,49 +149,35 @@
     </Component>
     <Component class="javax.swing.JTextField" name="nomeText">
     </Component>
-    <Component class="javax.swing.JLabel" name="sexoLabel">
+    <Component class="javax.swing.JLabel" name="veiculoLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Sexo:"/>
+        <Property name="text" type="java.lang.String" value="Ve&#xed;culo:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="mRadio">
+    <Component class="javax.swing.JRadioButton" name="motoRadio">
       <Properties>
-        <Property name="text" type="java.lang.String" value="M"/>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Moto"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="fRadio">
+    <Component class="javax.swing.JRadioButton" name="carroRadio">
       <Properties>
-        <Property name="text" type="java.lang.String" value="F"/>
+        <Property name="text" type="java.lang.String" value="Carro"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="idadeLabel">
+    <Component class="javax.swing.JLabel" name="placaLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Idade:"/>
+        <Property name="text" type="java.lang.String" value="Placa:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="idadeText">
     </Component>
-    <Component class="javax.swing.JLabel" name="cursoLabel">
+    <Component class="javax.swing.JLabel" name="corLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Curso:"/>
+        <Property name="text" type="java.lang.String" value="Cor:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cursoCombobox">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="buscaButton">
+    <Component class="javax.swing.JButton" name="buscarCadastroButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Buscar"/>
       </Properties>
@@ -215,6 +206,13 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="buscarPlacaButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Buscar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="corText">
     </Component>
   </SubComponents>
 </Form>

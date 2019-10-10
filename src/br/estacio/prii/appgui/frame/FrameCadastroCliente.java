@@ -6,10 +6,10 @@ import javax.swing.JFrame;
  *
  * @author alunoti
  */
-public class FrameCadastroAluno extends JFrame {
+public class FrameCadastroCliente extends JFrame {
 
     /** Creates new form FrameCadastro */
-    public FrameCadastroAluno() {
+    public FrameCadastroCliente() {
         setTitle("Cadastro Aluno");
         setSize(300,300);
         setLocationRelativeTo(null);
@@ -26,43 +26,43 @@ public class FrameCadastroAluno extends JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        matriculaLabel = new javax.swing.JLabel();
+        cadastroLabel = new javax.swing.JLabel();
         matriculaText = new javax.swing.JTextField();
         nomeLabel = new javax.swing.JLabel();
         nomeText = new javax.swing.JTextField();
-        sexoLabel = new javax.swing.JLabel();
-        mRadio = new javax.swing.JRadioButton();
-        fRadio = new javax.swing.JRadioButton();
-        idadeLabel = new javax.swing.JLabel();
+        veiculoLabel = new javax.swing.JLabel();
+        motoRadio = new javax.swing.JRadioButton();
+        carroRadio = new javax.swing.JRadioButton();
+        placaLabel = new javax.swing.JLabel();
         idadeText = new javax.swing.JTextField();
-        cursoLabel = new javax.swing.JLabel();
-        cursoCombobox = new javax.swing.JComboBox<>();
-        buscaButton = new javax.swing.JButton();
+        corLabel = new javax.swing.JLabel();
+        buscarCadastroButton = new javax.swing.JButton();
         novoButton = new javax.swing.JButton();
         alterarButton = new javax.swing.JButton();
         excluirButton = new javax.swing.JButton();
         gravarButton = new javax.swing.JButton();
         cancelarButtom = new javax.swing.JButton();
+        buscarPlacaButton = new javax.swing.JButton();
+        corText = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        matriculaLabel.setText("Matrícula:");
+        cadastroLabel.setText("Cadastro:");
 
         nomeLabel.setText("Nome:");
 
-        sexoLabel.setText("Sexo:");
+        veiculoLabel.setText("Veículo:");
 
-        mRadio.setText("M");
+        motoRadio.setSelected(true);
+        motoRadio.setText("Moto");
 
-        fRadio.setText("F");
+        carroRadio.setText("Carro");
 
-        idadeLabel.setText("Idade:");
+        placaLabel.setText("Placa:");
 
-        cursoLabel.setText("Curso:");
+        corLabel.setText("Cor:");
 
-        cursoCombobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        buscaButton.setText("Buscar");
+        buscarCadastroButton.setText("Buscar");
 
         novoButton.setText("Novo");
 
@@ -74,6 +74,8 @@ public class FrameCadastroAluno extends JFrame {
 
         cancelarButtom.setText("Cancelar");
 
+        buscarPlacaButton.setText("Buscar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -81,22 +83,25 @@ public class FrameCadastroAluno extends JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(matriculaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cadastroLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nomeLabel)
-                    .addComponent(sexoLabel)
-                    .addComponent(idadeLabel)
-                    .addComponent(cursoLabel))
+                    .addComponent(veiculoLabel)
+                    .addComponent(placaLabel)
+                    .addComponent(corLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cursoCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(motoRadio)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(carroRadio))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(idadeText, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(mRadio, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fRadio)))
+                                    .addComponent(corText, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+                                    .addComponent(idadeText, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(buscarPlacaButton)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(alterarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -113,7 +118,7 @@ public class FrameCadastroAluno extends JFrame {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(matriculaText, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(buscaButton))
+                                    .addComponent(buscarCadastroButton))
                                 .addComponent(nomeText, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(136, Short.MAX_VALUE))))
         );
@@ -123,8 +128,8 @@ public class FrameCadastroAluno extends JFrame {
                 .addGap(80, 80, 80)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(matriculaText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matriculaLabel)
-                    .addComponent(buscaButton))
+                    .addComponent(cadastroLabel)
+                    .addComponent(buscarCadastroButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(nomeLabel)
@@ -141,17 +146,18 @@ public class FrameCadastroAluno extends JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(sexoLabel)
-                            .addComponent(mRadio)
-                            .addComponent(fRadio))
+                            .addComponent(veiculoLabel)
+                            .addComponent(motoRadio)
+                            .addComponent(carroRadio))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(idadeLabel)
-                            .addComponent(idadeText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(placaLabel)
+                            .addComponent(idadeText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buscarPlacaButton))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(cursoLabel)
-                            .addComponent(cursoCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(corLabel)
+                            .addComponent(corText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(gravarButton)
@@ -164,22 +170,23 @@ public class FrameCadastroAluno extends JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton alterarButton;
-    private javax.swing.JButton buscaButton;
+    private javax.swing.JButton buscarCadastroButton;
+    private javax.swing.JButton buscarPlacaButton;
+    private javax.swing.JLabel cadastroLabel;
     private javax.swing.JButton cancelarButtom;
-    private javax.swing.JComboBox<String> cursoCombobox;
-    private javax.swing.JLabel cursoLabel;
+    private javax.swing.JRadioButton carroRadio;
+    private javax.swing.JLabel corLabel;
+    private javax.swing.JTextField corText;
     private javax.swing.JButton excluirButton;
-    private javax.swing.JRadioButton fRadio;
     private javax.swing.JButton gravarButton;
-    private javax.swing.JLabel idadeLabel;
     private javax.swing.JTextField idadeText;
-    private javax.swing.JRadioButton mRadio;
-    private javax.swing.JLabel matriculaLabel;
     private javax.swing.JTextField matriculaText;
+    private javax.swing.JRadioButton motoRadio;
     private javax.swing.JLabel nomeLabel;
     private javax.swing.JTextField nomeText;
     private javax.swing.JButton novoButton;
-    private javax.swing.JLabel sexoLabel;
+    private javax.swing.JLabel placaLabel;
+    private javax.swing.JLabel veiculoLabel;
     // End of variables declaration//GEN-END:variables
 
 }

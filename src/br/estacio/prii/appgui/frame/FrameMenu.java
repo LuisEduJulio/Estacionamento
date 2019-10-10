@@ -85,11 +85,11 @@ public class FrameMenu extends JFrame {
     }//GEN-LAST:event_cadastrosBarActionPerformed
 
     private void usuariosMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariosMenuActionPerformed
-        new FrameCadastroAluno();
+        new FrameCadastroCliente();
     }//GEN-LAST:event_usuariosMenuActionPerformed
 
     private void alunoMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alunoMenuActionPerformed
-        new FrameCadastroAluno();
+        new FrameCadastroCliente();
     }//GEN-LAST:event_alunoMenuActionPerformed
 
    
